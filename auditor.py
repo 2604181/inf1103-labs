@@ -5,9 +5,17 @@ while True:
     if user_input == 'quit':
         break
     if not user_input.isdigit():
-        print("Invalid input. Please enter a valid whole number.")
+        print("Error. Please enter a valid whole number.")
         failed += 1
         continue
 
     quantity = int(user_input)
+
+    if quantity < 0:
+        print("Error. Quantity cannot be negative.")
+        failed += 1
+        continue
+
+    total += quantity
+
 
