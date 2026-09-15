@@ -18,4 +18,8 @@ while True:
 
     total += quantity
 
+    if total > 500:
+        print(f"Overstock Alert: Total inventory is ({total} units), which exceeds 500 units!")
+        break
+
 
