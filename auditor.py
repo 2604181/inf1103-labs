@@ -22,4 +22,6 @@ while True:
         print(f"Overstock Alert: Total inventory is ({total} units), which exceeds 500 units!")
         break
 
-
+print("---- Inventory Audit Summary ----")
+print(f"Total Units Processed: {total}")
+print(f"Number of Failed/Rejected Entries: {failed}")
